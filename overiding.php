@@ -1,17 +1,40 @@
 <?php
 
 class Produk {
-    public $judul, $penulis, $penerbit; 
+    private $judul, $penulis, $penerbit; 
     protected $diskon = 0;
     private $harga;
 
     public function __construct($judul = "judul", $penulis = "penulis", $penerbit =  "penerbit", $harga = 0) {
         $this->judul = $judul;
-        $this->penulis $penulis;
+        $this->penulis = $penulis;
         $this->penerbit = $penerbit;
         $this->harga = $harga;
     }
     
+    public function setJudul(){
+        $this->judul = $judul;
+    }
+
+    public function getJudul(){
+        return $this->judul;
+    }
+
+    public function setPenulis(){
+        $this->penulis = $penulis;
+    }
+
+    public function getPenulis(){
+        return $this->penulis;
+    }
+    public function setPenerbit(){
+        $this->penerbit = $penerbit;
+    }
+
+    public function getPenerbit(){
+        return $this->penerbit;
+    }
+
     public function setDiskon($diskon){
         $this->diskon = $diskon;
     }
@@ -74,4 +97,3 @@ echo "<br><hr>";
 
 $produk2->setDiskon(50);
 echo $produk2->getHarga();
-    
