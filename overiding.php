@@ -64,11 +64,14 @@ Class Game extends Produk {
     }
 }
 
-    $produk1 = new Komik("Naruto", "Masashi Kishimoto", "Shonen Jump", 30000, 100);
+$produk1 = new Komik ("Naruto", "Masashi Kishimoto", "Shonen Jump", 30000, 100);
+$produk2 = new Game ("Uncharted", "Nell Duckmanmn", "Sony Computer", 250000, 50);
     
-    echo $product1->getInfoProduct();
-    echo "<br>";
-    echo $product2->getInfoProduct();
-    echo "<br><hr>";
-    $produk2->setDiscon(50);
+echo $produk1->getInfoProduk();
+echo "<br>";
+echo $produk2->getInfoProduk();
+echo "<br><hr>";
+
+$produk2->setDiskon(50);
+echo $produk2->getHarga();
     
